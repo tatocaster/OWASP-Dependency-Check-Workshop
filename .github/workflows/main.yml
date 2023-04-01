@@ -20,6 +20,6 @@ jobs:
       - name: Build the app
         run: ./gradlew assembleDebug
 
-#       - name: Check for vulnerabilities
-#         run: ./gradlew dependencyCheckAnalyze
+      - name: Check for vulnerabilities
+        run: ./gradlew dependencyCheckAnalyze
         
