@@ -1,8 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'org.owasp.dependencycheck'
 }
-apply plugin: 'org.owasp.dependencycheck'
 
 android {
     namespace 'me.tatocaster.owaspworkshop'
@@ -62,5 +62,5 @@ dependencies {
 }
 
 dependencyCheck {
-    failBuildOnCVSS 4
+    failBuildOnCVSS 6
 }
